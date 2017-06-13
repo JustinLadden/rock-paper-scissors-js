@@ -11,5 +11,5 @@
   * If the computer wins it should return "The computer won!"
   * If the user wins it should return "You won!"
 * Good luck!
-![coding cat](https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif)
+
 ![success](https://media.giphy.com/media/102h4wsmCG2s12/giphy.gif)
