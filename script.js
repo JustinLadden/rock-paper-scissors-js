@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Your declareWinner function goes below
   function declareWinner(userChoice, computerChoice){
     if(userChoice == "rock" && computerChoice == "paper"){
-      return "Computer Won!"
+      return "The Computer Won!"
     }else if(userChoice == "rock" && computerChoice == "scissors"){
       return "You Won!"
     }else if(userChoice == "rock" && computerChoice == "rock"){
@@ -24,17 +24,17 @@ document.addEventListener('DOMContentLoaded', function() {
     }else if(userChoice == "paper" && computerChoice == "paper"){
       return "Tie!"
     }else if(userChoice == "paper" && computerChoice == "scissors"){
-      return "Computer Won!"
+      return "The Computer Won!"
     } else if(userChoice == "paper" && computerChoice == "rock"){
       return "You Won!"
     }else if(userChoice == "scissors" && computerChoice == "paper"){
       return "You Won!"
     }else if(userChoice == "scissors" && computerChoice == "scissors"){
       return "Tie!"
-    } else if(userChoice == "scissors" && computerChoice == "rock"){
-      return "Computer Won!"
-    }
-
+    }else if(userChoice == "scissors" && computerChoice == "rock"){
+      return "The Computer Won!"
+    }else if(userChoice != "rock" || "scissors" || "paper")
+      return "You had a typo...."
 
     
   }
