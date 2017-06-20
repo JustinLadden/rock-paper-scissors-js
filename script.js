@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
       return "You didn't follow the rules!"
     }  */
     //Nested switch statements
-    switch(userChoice){
+    switch(userChoice.toLowerCase()){
       case "rock":
       switch(computerChoice){
         case "rock":
