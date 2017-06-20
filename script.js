@@ -21,13 +21,27 @@ document.addEventListener('DOMContentLoaded', function() {
       } else {
         return "No one won!"
       }
-    } else if (userChoice == "paper"){
-
-    } else if (userChoice == "scissors"){
-
+    }else if (userChoice == "paper"){
+      if (computerChoice == "rock"){
+        return "You won!"
+      } else if (computerChoice == "scissors"){
+        return "The computer won!"
+      } else if (computerChoice == "paper"){
+        return "No one won!"
+      }
+    }else if (userChoice == "scissors"){
+      if (computerChoice == "paper"){
+        return "You won!"
+      } else if (computerChoice == "rock"){
+        return "The computer won!"
+      } else if (computerChoice == "scissors"){
+        return "No one won!"
+      }
+    }else {
+      return "You didn't follow the rules!"
     }  
   }
 
-
+  console.log(declareWinner(userChoice, computerChoice))
 
 })
