@@ -1,0 +1,9 @@
+body{
+  background-image: url("http://www.helpmykidlearn.ie/images/uploads/rock,_paper_larger.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1{
+  text-align: center;
+}
