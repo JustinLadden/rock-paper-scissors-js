@@ -88,5 +88,6 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   console.log(declareWinner(userChoice, computerChoice))
+  alert(declareWinner(userChoice, computerChoice))
 
 })
