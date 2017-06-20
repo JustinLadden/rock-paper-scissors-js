@@ -1,23 +1,15 @@
 document.addEventListener('DOMContentLoaded', function() {
-
-  // The code below allows the computer to pick a random choice between: rock, paper, or scissors.
   var options = ["rock", "paper", "scissors"];
   var computerChoice = options[Math.floor(Math.random() * options.length)];
-  // Your prompt() goes below
-
-
-
-
-
-
-  console.log("The computer chooses: " + computerChoice);
-  // Your declareWinner function goes below
-
-
-
-
-
-
-
-
+  var user =prompt ("rock, paper, or scissors")
+    console.log("The computer chooses: " + computerChoice);
+  if (user == computerChoice) {
+    alert("tie")
+  }else if(user=="scissors"&& computerChoice=="paper"||user=="paper"&& computerChoice=="rock"||user=="rock"&& computerChoice=="scissors"){
+    alert("You win")
+  }else if(user=="scissors"&& computerChoice=="rock" || user=="rock"&& computerChoice=="paper" || user=="paper"&& computerChoice=="scissors"){
+    alert("computer wins")
+  } else {
+    alert ("invalid entry")
+  }
 })
