@@ -4,34 +4,36 @@ document.addEventListener('DOMContentLoaded', function() {
   var options = ["rock", "paper", "scissors"];
   var computerChoice = options[Math.floor(Math.random() * options.length)];
   // Your prompt() goes below
-    var userChoice = prompt("Please enter Rock,Paper, or Scissors")
+    var userChoice = prompt("Please enter rock,paper, or scissors")
       console.log(userChoice, computerChoice)
         if (userChoice == "rock" && computerChoice == "paper") {
           alert("You Lost!");
         }
-        if (userChoice == "paper" && computerChoice == "scissors") {
+        else if (userChoice == "paper" && computerChoice == "scissors") {
           alert("You Lost!");
         }
-        if (userChoice == "scissors" && computerChoice == "rock") {
+        else if (userChoice == "scissors" && computerChoice == "rock") {
           alert("You Lost");
         }
-        if (userChoice == "rock" && computerChoice == "rock") {
+        else if (userChoice == "rock" && computerChoice == "rock") {
           alert("You Tied!");
         }
-        if (userChoice == "paper" && computerChoice == "paper") {
+        else if (userChoice == "paper" && computerChoice == "paper") {
           alert("You Tied!");
         }
-        if (userChoice == "scissors" && computerChoice == "scissors") {
+        else if (userChoice == "scissors" && computerChoice == "scissors") {
           alert("You Tied!");
         }
-        if (userChoice == "rock" && computerChoice == "scissors") {
+        else if (userChoice == "rock" && computerChoice == "scissors") {
           alert("You Won!");
         }
-        if (userChoice == "paper" && computerChoice == "rock") {
+        else if (userChoice == "paper" && computerChoice == "rock") {
           alert("You Won!");
         }
-        if (userChoice == "scissors" && computerChoice == "paper") {
+        else if (userChoice == "scissors" && computerChoice == "paper") {
           alert("You Won!");
+        } else {
+            alert("You didn't type rock, paper, or scissors");
         }
       console.log(userChoice, computerChoice) 
       
