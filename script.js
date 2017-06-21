@@ -1,71 +1,71 @@
-document.addEventListener('DOMContentLoaded', function() {
+// document.addEventListener('DOMContentLoaded', function() {
 
-  // The code below allows the computer to pick a random choice between: rock, paper, or scissors.
-  var options = ["Rock", "Paper", "Scissors"];
+//   // The code below allows the computer to pick a random choice between: rock, paper, or scissors.
+//   var options = ["Rock", "Paper", "Scissors"];
 
-  var computerChoice = options[Math.floor(Math.random() * options.length)];
+//   var computerChoice = options[Math.floor(Math.random() * options.length)];
 
-  // Your prompt() goes below
-  var userChoice = prompt("Choose Rock, Paper, or Scissors");
+//   // Your prompt() goes below
+//   var userChoice = prompt("Choose Rock, Paper, or Scissors");
 
-  if(options.indexOf(userChoice) === -1){
+//   if(options.indexOf(userChoice) === -1){
 
-    userChoice = "Invalid answer(capitalize first or actually put something listed)";
+//     userChoice = "Invalid answer(capitalize first or actually put something listed)";
 
-  }
+//   }
 
-  console.log("The user chooses: " + userChoice);
+//   console.log("The user chooses: " + userChoice);
 
-  console.log("The computer chooses: " + computerChoice);
+//   console.log("The computer chooses: " + computerChoice);
 
-  // Your declareWinner function goes below
-  function declareWinner(userChoice, computerChoice){
+//   // Your declareWinner function goes below
+//   function declareWinner(userChoice, computerChoice){
 
-    if(userChoice == "Rock" && computerChoice == "Scissors"){
+//     if(userChoice == "Rock" && computerChoice == "Scissors"){
 
-      return "You won!";
+//       return "You won!";
 
-    }else if(userChoice == "Rock" && computerChoice == "Rock"){
+//     }else if(userChoice == "Rock" && computerChoice == "Rock"){
 
-      return "You tied";
+//       return "You tied";
 
-    }else if(userChoice == "Rock" && computerChoice == "Paper"){
+//     }else if(userChoice == "Rock" && computerChoice == "Paper"){
 
-      return "You lost";
+//       return "You lost";
 
-    }else if(userChoice == "Paper" && computerChoice == "Rock"){
+//     }else if(userChoice == "Paper" && computerChoice == "Rock"){
 
-      return "You won!";
+//       return "You won!";
 
-    }else if(userChoice == "Paper" && computerChoice == "Paper"){
+//     }else if(userChoice == "Paper" && computerChoice == "Paper"){
 
-      return "You tied";
+//       return "You tied";
 
-    }else if(userChoice == "Paper" && computerChoice == "Scissors"){
+//     }else if(userChoice == "Paper" && computerChoice == "Scissors"){
 
-      return "You lost";
+//       return "You lost";
 
-    }else if(userChoice == "Scissors" && computerChoice == "Paper"){
+//     }else if(userChoice == "Scissors" && computerChoice == "Paper"){
 
-      return "You won!";
+//       return "You won!";
 
-    }else if(userChoice == "Scissors" && computerChoice == "Scissors"){
+//     }else if(userChoice == "Scissors" && computerChoice == "Scissors"){
 
-      return "You tied!";
+//       return "You tied!";
 
-    }else if(userChoice == "Scissors" && computerChoice == "Rock"){
+//     }else if(userChoice == "Scissors" && computerChoice == "Rock"){
 
-      return "You lost!";
+//       return "You lost!";
 
-    }else{
+//     }else{
 
-      return "You lost";
+//       return "You lost";
 
-    }
+//     }
 
-  }
+//   }
 
-  alert("The user(You) chose: " + userChoice + "\nThe computer chose: " + computerChoice + "\nThis means " + declareWinner(userChoice, computerChoice));
+//   alert("The user(You) chose: " + userChoice + "\nThe computer chose: " + computerChoice + "\nThis means " + declareWinner(userChoice, computerChoice));
 
 
-})
+// })
