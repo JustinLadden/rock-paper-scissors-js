@@ -1,16 +1,20 @@
 document.addEventListener('DOMContentLoaded', function() {
 
+  $("#gameStart").click(function(){
+
   // The code below allows the computer to pick a random choice between: rock, paper, or scissors.
-  var options = ["Rock", "Paper", "Scissors"];
+  var options = ["rock", "paper", "scissors"];
 
   var computerChoice = options[Math.floor(Math.random() * options.length)];
 
   // Your prompt() goes below
-  var userChoice = prompt("Choose Rock, Paper, or Scissors");
+  var userChoice = prompt("Choose rock, paper, or scissors");
+
+  var userChoice = userChoice.toLowerCase()
 
   if(options.indexOf(userChoice) === -1){
 
-    userChoice = "Invalid answer(capitalize first or actually put something listed)";
+    userChoice = "Invalid answer";
 
   }
 
@@ -18,54 +22,32 @@ document.addEventListener('DOMContentLoaded', function() {
 
   console.log("The computer chooses: " + computerChoice);
 
+  
+  
   // Your declareWinner function goes below
   function declareWinner(userChoice, computerChoice){
 
-    if(userChoice == "Rock" && computerChoice == "Scissors"){
+    if(userChoice == "rock" && computerChoice == "scissors" || userChoice == "paper" && computerChoice == "rock" || userChoice == "scissors" && computerChoice == "paper"){
 
       return "You won!";
 
-    }else if(userChoice == "Rock" && computerChoice == "Rock"){
+    }else if(userChoice == "rock" && computerChoice == "rock" || userChoice == "paper" && computerChoice == "paper" || userChoice == "scissors" && computerChoice == "scissors"){
 
       return "You tied";
 
-    }else if(userChoice == "Rock" && computerChoice == "Paper"){
-
-      return "You lost";
-
-    }else if(userChoice == "Paper" && computerChoice == "Rock"){
-
-      return "You won!";
-
-    }else if(userChoice == "Paper" && computerChoice == "Paper"){
-
-      return "You tied";
-
-    }else if(userChoice == "Paper" && computerChoice == "Scissors"){
-
-      return "You lost";
-
-    }else if(userChoice == "Scissors" && computerChoice == "Paper"){
-
-      return "You won!";
-
-    }else if(userChoice == "Scissors" && computerChoice == "Scissors"){
-
-      return "You tied!";
-
-    }else if(userChoice == "Scissors" && computerChoice == "Rock"){
-
-      return "You lost!";
-
-    }else{
+    }else if(userChoice == "rock" && computerChoice == "paper" || userChoice == "paper" && computerChoice == "scissors" || userChoice == "scissors" && computerChoice == "rock"){
 
       return "You lost";
 
     }
 
   }
+  
+  var winner = declareWinner(userChoice, computerChoice)
 
-  alert("The user(You) chose: " + userChoice + "\nThe computer chose: " + computerChoice + "\nThis means " + declareWinner(userChoice, computerChoice));
+  alert("The user(You) chose: " + userChoice + "\nThe computer chose: " + computerChoice + "\nThis means " + winner);
+  
+  $("#button").append("<Table border='1px'> <tr> <th>User Choice: " + userChoice + "</th> <th>Computer Choice: " + computerChoice + "</th> <th>" + winner + "</th> </tr> ");
 
-
+  })
 })
