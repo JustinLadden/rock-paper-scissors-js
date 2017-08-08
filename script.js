@@ -4,7 +4,8 @@ document.addEventListener('DOMContentLoaded', function() {
   var options = ["rock", "paper", "scissors"];
   var computerChoice = options[Math.floor(Math.random() * options.length)];
   // Your prompt() goes below
-
+var userChoice = prompt("rock,paper,scissors")
+console.log("The user chooses: " + userChoice);
 
 
 
@@ -12,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   console.log("The computer chooses: " + computerChoice);
   // Your declareWinner function goes below
-
+function(declareWinner)
 
 
 
