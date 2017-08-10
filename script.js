@@ -7,15 +7,18 @@ document.addEventListener('DOMContentLoaded', function() {
 var userChoice = prompt("rock,paper,scissors")
 console.log("The user chooses: " + userChoice);
 if (userChoice === "rock" && computerChoice === "scissors") {
-   alert('you win')
+  alert('you win');
+  $(".winner").append("<h1> you win</h1>")
  } else if (userChoice === "paper" && computerChoice === "rock"){
    alert('you win')
+   $(".winner").append("<h1> you win</h1>")
  } else if (userChoice === "scissors" && computerChoice === "paper"){
    alert('you win')
+   $(".winner").append("<h1> you win</h1>")
  } else{
    alert('you lose')
+   $(".winner").append("<h1> you lose</h1>")
  }
-
 
 
 
