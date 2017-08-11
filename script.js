@@ -7,16 +7,26 @@ document.addEventListener('DOMContentLoaded', function() {
 var userChoice = prompt("rock,paper,scissors")
 console.log("The user chooses: " + userChoice);
 if (userChoice === "rock" && computerChoice === "scissors") {
-  alert('you win');
+  $(".winner").append('<img src="resources/winner.gif" alt="">')
   $(".winner").append("<h1> you win</h1>")
  } else if (userChoice === "paper" && computerChoice === "rock"){
-   alert('you win')
+   $(".winner").append('<img src="resources/winner.gif" alt="">')
    $(".winner").append("<h1> you win</h1>")
  } else if (userChoice === "scissors" && computerChoice === "paper"){
-   alert('you win')
+   $(".winner").append('<img src="resources/winner.gif" alt="">')
    $(".winner").append("<h1> you win</h1>")
+ } else if (userChoice === "paper" && computerChoice === "paper"){
+   $(".winner").append('<img src="resources/tie.gif" alt="">')
+   $(".winner").append("<h1> you tied</h1>")
+ } else if (userChoice === "scissors" && computerChoice === "scissors"){
+   $(".winner").append('<img src="resources/tie.gif" alt="">')
+   $(".winner").append("<h1> you tied</h1>")
+ } else if (userChoice === "rock" && computerChoice === "rock"){
+   $(".winner").append('<img src="resources/tie.gif" alt="">')
+   $(".winner").append("<h1> you tied</h1>")
+
  } else{
-   alert('you lose')
+   $(".winner").append('<img src="resources/winner.gif" alt="">')
    $(".winner").append("<h1> you lose</h1>")
  }
 
