@@ -3,4 +3,14 @@ body {
 }
 h1 {
   color: pink;
+  font-size: 20px;
+}
+#rockImage {
+/*top: 20px;*/
+border: solid 1px red;
+}
+
+
+.rockbutton{
+  border: solid 1px green;
 }
