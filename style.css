@@ -1,5 +1,6 @@
 body {
-  background-image: url("https://technabob.com/blog/wp-content/uploads/2017/06/spongebob_1.jpg");
+  background-color: green;
+  /*background-image: url("http://www.dailyrattle.com/wp-content/uploads/2015/10/200_s.gif");*/
 }
 h1 {
   text-align: center;
@@ -13,19 +14,19 @@ img {
 #rockImage {
   /*top: 20px;*/
 padding: 30px;
-border: solid 1px red;
+/*border: solid 1px red;*/
 }
 
 .buttons {
   display: -webkit-flex;
   display: flex;
-  border: solid 1px purple;
+  /*border: solid 1px purple;*/
   width: 1200px;
   height: 800px;
 }
 
 .rockbutton, .scissorsbutton, .paperbutton {
-  border: solid 1px green;
+  /*border: solid 1px green;*/
   width: 400px;
   margin: 50px;
 }
