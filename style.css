@@ -2,8 +2,13 @@ body {
   background-image: url("https://technabob.com/blog/wp-content/uploads/2017/06/spongebob_1.jpg");
 }
 h1 {
+  text-align: center;
   color: pink;
-  font-size: 20px;
+  font-size: 40px;
+}
+img {
+  height: 350px;
+  width: 400px;
 }
 #rockImage {
   /*top: 20px;*/
@@ -11,9 +16,16 @@ padding: 30px;
 border: solid 1px red;
 }
 
+.buttons {
+  display: -webkit-flex;
+  display: flex;
+  border: solid 1px purple;
+  width: 1200px;
+  height: 800px;
+}
 
-.rockbutton{
+.rockbutton, .scissorsbutton, .paperbutton {
   border: solid 1px green;
-height: 100;
-width: 300;
+  width: 400px;
+  margin: 50px;
 }

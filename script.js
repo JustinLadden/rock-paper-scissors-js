@@ -4,7 +4,11 @@ document.addEventListener('DOMContentLoaded', function() {
   var options = ["rock", "paper", "scissors"];
   var computerChoice = options[Math.floor(Math.random() * options.length)];
   // Your prompt() goes below
-var userChoice = prompt("rock,paper,scissors")
+// var userChoice = prompt("rock,paper,scissors")
+
+//Reassign userChoice using jquery selector!!!!!!!!!!!!!!!!!
+
+
 console.log("The user chooses: " + userChoice);
 if (userChoice === "rock" && computerChoice === "scissors") {
   $(".winner").append('<img src="resources/winner.gif" alt="">')
