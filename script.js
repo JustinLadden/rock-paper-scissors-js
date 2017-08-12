@@ -10,11 +10,11 @@ document.addEventListener('DOMContentLoaded', function() {
 $("#rockImage").click(function(){
   return declareWinner("rock")
 })
-$("#scissorsImage").click(function(){
-  return declareWinner("scissors")
-})
 $("#paperImage").click(function(){
   return declareWinner("paper")
+})
+$("#scissorsImage").click(function(){
+  return declareWinner("scissors")
 })
 
 function declareWinner(userChoice){
